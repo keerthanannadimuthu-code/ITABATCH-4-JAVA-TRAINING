@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        ArrayList<Object> student = new ArrayList<>();
+
+        System.out.print("Enter Name: ");
+        student.add(sc.nextLine());
+
+        System.out.print("Enter Phone Number: ");
+        student.add(sc.nextLong());
+
+        System.out.print("Enter Mark: ");
+        student.add(sc.nextInt());
+
+        sc.nextLine(); 
+
+        System.out.print("Enter Department: ");
+        student.add(sc.nextLine());
+
+        System.out.println("Student Details:");
+        System.out.println(student);
+    }
+}
