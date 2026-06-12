@@ -1,0 +1,35 @@
+class Main {
+    public static void main(String[] args) {
+
+        int[][] a = {
+            {1,1,0,0,0},
+            {0,1,0,0,1},
+            {1,0,0,1,1},
+            {0,0,0,0,0},
+            {1,0,1,0,1}
+        };
+
+        int count = 0;
+
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 5; j++) {
+
+                if(a[i][j] == 1) {
+
+                    boolean newIsland = true;
+
+                    if(i > 0 && a[i-1][j] == 1)
+                        newIsland = false;
+
+                    if(j > 0 && a[i][j-1] == 1)
+                        newIsland = false;
+
+                    if(newIsland)
+                        count++;
+                }
+            }
+        }
+
+        System.out.println(count);
+    }
+}
