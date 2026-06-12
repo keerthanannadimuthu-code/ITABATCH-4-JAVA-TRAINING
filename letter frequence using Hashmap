@@ -1,0 +1,22 @@
+import java.util.*;
+import java.util.HashMap;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String l = s.toLowerCase();
+        HashMap<Character,Integer> map = new HashMap<>();
+        for(int i=0;i<l.length();i++){
+            char c =l.charAt(i);
+                if(map.containsKey(c)){
+                    map.put(c,map.get(c)+1);
+                }
+                else {
+                    map.put(c,1);
+                }
+
+        }
+        System.out.println(map);
+        
+    }
+}
