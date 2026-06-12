@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+
+class Main {
+    public static void main (String[] args) {
+        
+      	// Creating an ArrayList
+      	ArrayList<Integer> a = new ArrayList<>();
+      	
+      	// Adding Element in ArrayList
+      	a.add(1);
+      	a.add(2);
+      	a.add(3);
+      
+      	// Printing ArrayList
+      	System.out.println(a);
+      	  a.remove(1);
+      	System.out.println(a);
+      	a.add(1,5);
+      	System.out.println(a);
+      	a.add(0,10);
+      	System.out.println(a);
+      	// replace or Update the element 
+      	a.set(0,5);
+      	System.out.println(a);
+      	System.out.println(a.get(0));
+      	System.out.println(a);
+      	
+      	// clear all element 
+      	//a.clear();
+      	//System.out.println(a);
+      	System.out.println(a.contains(5));
+      	// clone 
+      	ArrayList<Integer> b = (ArrayList<Integer>)a.clone();
+      	System.out.println(" b "+ b);
+      	}
+}
