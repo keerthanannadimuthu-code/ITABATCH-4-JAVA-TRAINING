@@ -1,0 +1,19 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int max=0;
+        Scanner ar = new Scanner(System.in);
+        System.out.println("Enter the size of Array :");
+        int n = ar.nextInt();
+        System.out.println("Enter the number:");
+        int[] a = new int[n];
+        for(int i=0;i<n;i++){
+            a[i]= ar.nextInt();
+             if(a[i] > max){
+            max=a[i];
+            }
+         
+        }
+        System.out.println("maximum number of array is "+ max);
+    }
+}
