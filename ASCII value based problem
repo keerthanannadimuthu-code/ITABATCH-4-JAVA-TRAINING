@@ -1,0 +1,12 @@
+import java.lang.*;
+class  Main{
+    public static void main(String[] args){
+        
+        char c = 'A';
+        char output = (c >= 'A'&& c <= 'Z')?(char)(c+32):c;
+        System.out.println(output);
+        
+        
+    }
+
+}
