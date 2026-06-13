@@ -1,0 +1,19 @@
+import java.lang.String;
+class Main {
+    public static void main(String[] args){
+        //String s1 = new String("Hello");
+        //String s2 = new String("Hello"); 
+        String s1="Hello";
+        String s2="Hello";
+             System.out.println(s1.equals(s2));
+            //System.out.println(s1.lastIndexOf('l'));
+/*String s = "HELLO WORLD";
+char ch = 'L';
+
+for(int i = 0; i < s.length(); i++) {
+    if(s.charAt(i) == ch) {
+        System.out.println(ch + " is at index " + i);
+    }
+}*/
+}
+}
